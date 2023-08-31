@@ -1,4 +1,15 @@
+Working directory
 git init - inicia un repo vacío en el proyecto
 git add . - Agrega todos los archivos del proyecto al seguimiento de la version
 git commit -m "comentario" - Crear un punto de restauración
 git remote add origin "url"
+git push -u origin master
+
+Configurar Credenciales
+git config --global user.name "usuario"
+git config --global user.email "correo"
+
+Staging Area
+git add .
+git commit -m "mensaje"
+git push
