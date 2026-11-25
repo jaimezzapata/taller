@@ -52,25 +52,29 @@ Si **no estás en tu PC personal**, asegúrate de limpiar credenciales anteriore
 
 ## Flujo de Versionamiento en Git (Estricto)
 
-Se evaluará el seguimiento ordenado del repositorio siguiendo estas reglas:
+Se evaluará el seguimiento ordenado del repositorio siguiendo exactamente estos pasos:
 
-1. **Rama `master`**:
-   - Debe contener **únicamente** el archivo `README.md` con la **información personal** de cada integrante (nombre completo, código/identificación, correo y diseño asignado).
-   - **No** se debe subir código fuente del proyecto directamente a `master`.
+1. **Rama `master` (Proyecto base + `README.md` detallado):**
+   - En tu proyecto base de React creado con Vite, el archivo `README.md` debe contener **tu información personal muy detallada** (nombre completo, documento, ficha, correos, teléfono, usuario de GitHub, diseño asignado y una breve presentación).
+   - Todo esto se debe crear en la rama `master`, guardar (`git commit`) y **subir a GitHub** (`git push -u origin master`) antes de crear otras ramas.
+   - **No** se debe subir el código de la migración directamente a `master`.
 
-2. **Rama `develop`**:
-   - Una vez configurado `master` con el `README.md`, se debe crear la rama `develop` como una **copia fiel de `master`**:
+2. **Rama `develop` (Copia fiel — NO se modifica):**
+   - Una vez guardado y subido `master` con tu `README.md` detallado, crea la rama `develop` como una **copia fiel de `master`** y súbela a GitHub:
      ```bash
      git checkout -b develop
+     git push -u origin develop
      ```
+   - **En `develop` NO se modifica nada**; debe quedar intacta como espejo de `master`.
 
-3. **Ramas por cada funcionalidad o actualización**:
-   - Por cada nueva característica, componente, configuración o actualización, se debe crear una rama **desde `develop`**:
+3. **Rama `feature/<nombre>` (Desarrollo de la solución):**
+   - Desde `develop`, crea una rama con el prefijo `feature/` más el nombre que quieras ponerle (por ejemplo `feature/migracion-memphis` o `feature/solucion-taller`):
      ```bash
      git checkout develop
-     git checkout -b feature/nombre-de-la-funcionalidad
+     git checkout -b feature/nombre-que-quieras
      ```
-   - Al finalizar cada tarea, integrar los cambios nuevamente hacia `develop`.
+   - Trabaja toda la migración en esta rama (o en ramas `feature/...` independientes si divides por partes) y **sube cada rama a GitHub** (`git push -u origin feature/nombre-que-quieras`).
+   - **IMPORTANTE — NO hacer PR ni merge:** **No** realices Pull Request (PR) ni *merge* hacia `develop` ni hacia `master`. Todas las ramas (`master`, `develop` y `feature/...`) deben quedar **quietas e independientes** en GitHub para su revisión.
 
 ---
 
@@ -114,11 +118,17 @@ Busca tu **número de documento** para conocer el diseño que te corresponde mig
 
 ---
 
-## Información del Estudiante
+## Información del Estudiante (Plantilla para tu `README.md` en `master`)
 
-> *(Completar en la rama `master` antes de crear `develop`)*
+> *(En tu proyecto base de React, completa estos datos de forma **muy detallada** en la rama `master`, haz commit y súbela a GitHub antes de crear `develop`)*
 
 - **Nombre completo:** 
-- **Documento / Código:** 
-- **Correo:** 
+- **Documento de identidad:** 
+- **Ficha / Grupo:** 
+- **Programa de formación:** 
+- **Correo SENA / Institucional:** 
+- **Correo personal:** 
+- **Teléfono / WhatsApp:** 
+- **Usuario / Enlace de GitHub:** 
 - **Diseño asignado:** *(Memphis / Pop Art / Brutalismo)*
+- **Sobre mí / Perfil:** *(Breve descripción personal, intereses en desarrollo web y expectativas del taller)*
