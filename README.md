@@ -130,3 +130,16 @@ Busca tu **número de documento** para conocer el diseño que te corresponde mig
 - **Usuario / Enlace de GitHub:** 
 - **Diseño asignado:**
 - **Sobre mí / Perfil:**
+
+
+---
+
+## Rúbrica de Evaluación (100 Puntos)
+
+| Criterio | Peso | Excelente (100%) | Aceptable (60%) | Por mejorar (0–30%) |
+|---|---:|---|---|---|
+| **1. Stack y Fidelidad Visual** *(Vite + React + Tailwind)* | **20 pts** | Proyecto creado con Vite + React, Tailwind instalado como dependencia (sin CDN) y respeta fielmente el diseño asignado (colores planos sin degradados, header/footer fijos, secciones). | Usa Vite + React y Tailwind, pero presenta diferencias visuales notables, degradados o problemas de diseño. | No usa Vite + React, usa Tailwind por CDN o no corresponde al diseño asignado. |
+| **2. Enrutamiento (React Router v6.4+)** | **20 pts** | Navegación 100% funcional con `React Router v6.4+` (`createBrowserRouter` / `RouterProvider`), sin recargas de página ni enlaces rotos. | La navegación funciona parcialmente o usa una versión/API anterior a v6.4. | No implementa enrutamiento o la navegación no funciona. |
+| **3. Componentización y Data** | **25 pts** | Código modular en componentes reutilizables (`Header`, `Footer`, `Card`, `pages`, etc.) y uso de archivos de data (objetos/arreglos con `.map()` y `props`). | Componentiza algunas partes, pero deja bloques grandes sin separar o *hardcodea* las cards sin usar arreglos/objetos. | Todo el código está en un solo archivo (`App.jsx`) sin componentización ni manejo de data. |
+| **4. Flujo Git y Convención de Commits** | **25 pts** | `master` solo con el proyecto base + `README.md` muy detallado; `develop` copia fiel intacta; desarrollo en rama `feature/...` independiente subida a GitHub (sin PR ni merge); commits con prefijos `docs:`, `chore:`, `feature:`. | Cumple la mayoría de ramas o commits, pero modificó `develop`, hizo merge/PR o faltaron prefijos en algunos commits. | No respeta la estructura de ramas, subió todo a `master` o no usó convención de commits. |
+| **5. README Detallado y Entrega** | **10 pts** | `README.md` completo con toda la información personal detallada en `master` y repositorio enviado puntualmente al finalizar la jornada a `jzapata@sena.edu.co`. | Información personal incompleta en el `README.md` o entrega con observaciones menores. | No incluye datos personales en el `README.md` o no envió el repositorio al correo indicado. |
