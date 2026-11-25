@@ -20,8 +20,9 @@ Migrar el diseño HTML/Tailwind asignado (**Memphis**, **Pop Art** o **Brutalism
    - La navegación entre secciones/vistas debe ser completamente funcional utilizando **React Router versión 6.4 o superior** (ej. `createBrowserRouter` + `RouterProvider`).
    - Los enlaces del `Header` y botones de navegación deben funcionar correctamente sin recargar la página.
 
-3. **Componentización**:
-   - El código debe estar dividido de forma clara y reutilizable (por ejemplo: `components/Header.jsx`, `components/Footer.jsx`, `components/Card.jsx`, `pages/...`).
+3. **Componentización y manejo de datos**:
+   - El código debe estar dividido de forma clara y reutilizable (por ejemplo: `components/Header.jsx`, `components/Footer.jsx`, `components/Card.jsx`, `pages/...`, `data/...`).
+   - En el proceso de componentización deben **crear la data, objetos o arreglos necesarios** (por ejemplo, en archivos `src/data/...`) para renderizar dinámicamente las *cards* y demás elementos repetitivos mediante `props` o `import/export` y `.map()`, evitando duplicar código JSX.
 
 ---
 
