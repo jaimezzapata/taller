@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth snap-y snap-mandatory">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOOM! FEST 2026 | Festival Pop Art</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#FFE600] text-black antialiased selection:bg-[#FF0055] selection:text-white">
+
+  <!-- HEADER FIJO -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white border-b-4 border-black px-4 md:px-10 h-16 flex items-center justify-between">
+    <a href="#inicio" class="flex items-center gap-2 group">
+      <div class="px-2.5 py-1 bg-[#FF0055] text-white border-2 border-black font-black text-base uppercase tracking-tight -rotate-3 shadow-[3px_3px_0px_0px_#000] group-hover:rotate-0 transition-transform">
+        BOOM!
+      </div>
+      <span class="font-black text-lg uppercase tracking-tight hidden sm:inline">FEST <span class="text-[#0047FF]">26</span></span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-2">
+      <a href="#inicio" class="px-2.5 py-1 bg-[#FFE600] border-2 border-black font-black text-[11px] uppercase shadow-[2px_2px_0px_0px_#000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all">01 Inicio</a>
+      <a href="#lineup" class="px-2.5 py-1 bg-[#00E5FF] border-2 border-black font-black text-[11px] uppercase shadow-[2px_2px_0px_0px_#000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all">02 Lineup</a>
+      <a href="#galeria" class="px-2.5 py-1 bg-[#FF0055] text-white border-2 border-black font-black text-[11px] uppercase shadow-[2px_2px_0px_0px_#000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all">03 Galería</a>
+      <a href="#entradas" class="px-2.5 py-1 bg-white border-2 border-black font-black text-[11px] uppercase shadow-[2px_2px_0px_0px_#000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all">04 Entradas</a>
+      <a href="#horarios" class="px-2.5 py-1 bg-[#0047FF] text-white border-2 border-black font-black text-[11px] uppercase shadow-[2px_2px_0px_0px_#000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all">05 Mapa</a>
+      <a href="#contacto" class="px-2.5 py-1 bg-[#FFE600] border-2 border-black font-black text-[11px] uppercase shadow-[2px_2px_0px_0px_#000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all">06 Club</a>
+    </nav>
+
+    <a href="#entradas" class="px-4 py-1.5 bg-[#0047FF] text-white border-2 border-black font-black text-xs uppercase tracking-wider shadow-[3px_3px_0px_0px_#000] hover:bg-[#FF0055] transition-colors">
+      Tickets!
+    </a>
+  </header>
+
+  <main>
+
+    <!-- SECCIÓN 1: HERO POP ART (100vh) -->
+    <section id="inicio" class="relative h-screen w-full snap-start overflow-hidden bg-[#FFE600] pt-20 pb-16 px-6 md:px-12 flex items-center justify-center">
+      
+      <!-- Patrón Halftone Ben-Day SVG (sin degradados) -->
+      <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-20" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="halftone-hero" width="18" height="18" patternUnits="userSpaceOnUse">
+            <circle cx="5" cy="5" r="3" fill="#FF0055" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#halftone-hero)" />
+      </svg>
+
+      <div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+        
+        <!-- Columna Izquierda -->
+        <div class="lg:col-span-6 flex flex-col items-start gap-4">
+          <!-- Bocadillo de cómic -->
+          <div class="relative bg-white border-4 border-black px-4 py-2 shadow-[4px_4px_0px_0px_#000] -rotate-2">
+            <span class="font-black text-xs uppercase tracking-widest text-[#FF0055]">14 – 16 NOVIEMBRE · PARQUE CENTRAL</span>
+          </div>
+
+          <h1 class="text-5xl sm:text-6xl xl:text-7xl font-black uppercase leading-[0.9] tracking-tight">
+            <span class="block text-black drop-shadow-[4px_4px_0px_#FFF]">ARTE, MÚSICA</span>
+            <span class="inline-block bg-[#FF0055] text-white border-4 border-black px-3 py-1 shadow-[6px_6px_0px_0px_#000] rotate-1 mt-2">
+              Y POP ART!
+            </span>
+          </h1>
+
+          <p class="bg-white border-4 border-black p-4 font-bold text-sm sm:text-base shadow-[5px_5px_0px_0px_#000] max-w-md">
+            Tres días de conciertos indie, murales gigantes, vinilos coleccionables y cultura cómic en vivo.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 mt-1">
+            <a href="#entradas" class="px-7 py-3.5 bg-[#00E5FF] text-black border-4 border-black font-black text-sm uppercase tracking-wider shadow-[6px_6px_0px_0px_#000] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
+              ¡Conseguir Pase!
+            </a>
+            <div class="px-4 py-2 bg-[#0047FF] text-white border-4 border-black font-black text-xs uppercase shadow-[4px_4px_0px_0px_#000] rotate-2">
+              +30 Artistas
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Cuadrícula Warhol 2x2 -->
+        <div class="lg:col-span-6 flex justify-center">
+          <div class="relative w-full max-w-md bg-white border-4 border-black p-3 shadow-[10px_10px_0px_0px_#000]">
+            <!-- Explosión Starburst Pop Art -->
+            <div class="absolute -top-7 -right-6 z-20 w-24 h-24 flex items-center justify-center">
+              <svg class="w-full h-full text-[#FF0055]" viewBox="0 0 100 100" fill="currentColor">
+                <polygon points="50,2 62,28 90,14 76,42 98,55 72,66 84,92 56,78 44,98 34,74 8,86 22,58 2,44 28,34 16,8 42,24" stroke="#000" stroke-width="4"/>
+              </svg>
+              <span class="absolute font-black text-white text-xs uppercase -rotate-12">LIVE!</span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div class="border-4 border-black bg-[#00E5FF] p-1.5">
+                <img src="https://images.unsplash.com/photo-1780766136511-dbacfcd8246a?auto=format&fit=crop&w=500&q=80" alt="Vinilo Pop Art" class="w-full h-36 sm:h-40 object-cover border-2 border-black" />
+              </div>
+              <div class="border-4 border-black bg-[#FF0055] p-1.5">
+                <img src="https://images.unsplash.com/photo-1789496820224-37b9f405fbe7?auto=format&fit=crop&w=500&q=80" alt="Concierto en vivo" class="w-full h-36 sm:h-40 object-cover border-2 border-black" />
+              </div>
+              <div class="border-4 border-black bg-[#FFE600] p-1.5">
+                <img src="https://images.unsplash.com/photo-1789496820224-37b9f405fbe7?auto=format&fit=crop&w=500&q=80" alt="Escenario Pop" class="w-full h-36 sm:h-40 object-cover border-2 border-black grayscale contrast-125" />
+              </div>
+              <div class="border-4 border-black bg-[#0047FF] p-1.5">
+                <img src="https://images.unsplash.com/photo-1780766136511-dbacfcd8246a?auto=format&fit=crop&w=500&q=80" alt="Cultura Vinilo" class="w-full h-36 sm:h-40 object-cover border-2 border-black grayscale contrast-125" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: LINEUP CÓMIC (100vh) -->
+    <section id="lineup" class="relative h-screen w-full snap-start overflow-hidden bg-[#00E5FF] pt-20 pb-16 px-6 md:px-12 flex flex-col items-center justify-center border-t-4 border-black">
+      
+      <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-15" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="halftone-cyan" width="16" height="16" patternUnits="userSpaceOnUse">
+            <circle cx="4" cy="4" r="2.5" fill="#000" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#halftone-cyan)" />
+      </svg>
+
+      <div class="max-w-6xl w-full relative z-10 flex flex-col gap-5">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div class="bg-white border-4 border-black px-4 py-2 shadow-[5px_5px_0px_0px_#000]">
+            <h2 class="text-2xl sm:text-4xl font-black uppercase tracking-tight">02 · Lineup Principal</h2>
+          </div>
+          <span class="px-4 py-1.5 bg-[#FFE600] border-4 border-black font-black text-xs uppercase shadow-[4px_4px_0px_0px_#000] -rotate-2">
+            3 Escenarios Simultáneos
+          </span>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-5">
+          <div class="bg-[#FFE600] border-4 border-black p-4 md:p-5 shadow-[6px_6px_0px_0px_#000] flex flex-col justify-between gap-2">
+            <span class="self-start px-2 py-0.5 bg-black text-white font-black text-[10px] uppercase">Vie · 21:00</span>
+            <h3 class="font-black text-lg md:text-2xl uppercase">The Pixels</h3>
+            <p class="text-xs font-bold">Synth-pop y visuales retro en el escenario central.</p>
+          </div>
+
+          <div class="bg-[#FF0055] text-white border-4 border-black p-4 md:p-5 shadow-[6px_6px_0px_0px_#000] flex flex-col justify-between gap-2">
+            <span class="self-start px-2 py-0.5 bg-[#FFE600] text-black border border-black font-black text-[10px] uppercase">Vie · 23:00</span>
+            <h3 class="font-black text-lg md:text-2xl uppercase">Neon Wave</h3>
+            <p class="text-xs font-bold">Electro-funk directo desde Madrid.</p>
+          </div>
+
+          <div class="bg-white border-4 border-black p-4 md:p-5 shadow-[6px_6px_0px_0px_#000] flex flex-col justify-between gap-2">
+            <span class="self-start px-2 py-0.5 bg-[#0047FF] text-white font-black text-[10px] uppercase">Sáb · 20:30</span>
+            <h3 class="font-black text-lg md:text-2xl uppercase">Luna Pop</h3>
+            <p class="text-xs font-bold">Indie pop con estética cómic en vivo.</p>
+          </div>
+
+          <div class="bg-[#0047FF] text-white border-4 border-black p-4 md:p-5 shadow-[6px_6px_0px_0px_#000] flex flex-col justify-between gap-2">
+            <span class="self-start px-2 py-0.5 bg-white text-black font-black text-[10px] uppercase">Sáb · 22:30</span>
+            <h3 class="font-black text-lg md:text-2xl uppercase">DJ Halftone</h3>
+            <p class="text-xs font-bold">Sesión 100% vinilos disco y house.</p>
+          </div>
+
+          <div class="bg-white border-4 border-black p-4 md:p-5 shadow-[6px_6px_0px_0px_#000] flex flex-col justify-between gap-2">
+            <span class="self-start px-2 py-0.5 bg-[#FF0055] text-white font-black text-[10px] uppercase">Dom · 19:00</span>
+            <h3 class="font-black text-lg md:text-2xl uppercase">Retro Kit</h3>
+            <p class="text-xs font-bold">Guitarras garage y energía de los 60s.</p>
+          </div>
+
+          <div class="bg-[#FFE600] border-4 border-black p-4 md:p-5 shadow-[6px_6px_0px_0px_#000] flex flex-col justify-between gap-2">
+            <span class="self-start px-2 py-0.5 bg-[#00E5FF] text-black border border-black font-black text-[10px] uppercase">Dom · 21:30</span>
+            <h3 class="font-black text-lg md:text-2xl uppercase">Sonic Ink</h3>
+            <p class="text-xs font-bold">Cierre explosivo con banda y muralistas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: GALERÍA POP (100vh) -->
+    <section id="galeria" class="relative h-screen w-full snap-start overflow-hidden bg-[#FF0055] pt-20 pb-16 px-6 md:px-12 flex flex-col items-center justify-center border-t-4 border-black">
+      
+      <div class="max-w-6xl w-full relative z-10 flex flex-col gap-5">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div class="bg-[#FFE600] border-4 border-black px-4 py-2 shadow-[5px_5px_0px_0px_#000]">
+            <h2 class="text-2xl sm:text-4xl font-black uppercase tracking-tight">03 · Zonas de Arte</h2>
+          </div>
+          <p class="bg-white border-2 border-black px-3 py-1 font-black text-xs uppercase shadow-[3px_3px_0px_0px_#000]">
+            Experiencias Interactivas
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <!-- Panel 1 -->
+          <div class="bg-white border-4 border-black p-3 shadow-[8px_8px_0px_0px_#000] flex flex-col gap-3">
+            <div class="relative border-2 border-black h-48 overflow-hidden bg-[#00E5FF]">
+              <img src="https://images.unsplash.com/photo-1780766136511-dbacfcd8246a?auto=format&fit=crop&w=700&q=80" alt="Mercado de Vinilos" class="w-full h-full object-cover" />
+              <span class="absolute top-2 left-2 bg-[#FFE600] border-2 border-black px-2 py-0.5 font-black text-xs uppercase">ZONA A</span>
+            </div>
+            <h3 class="font-black text-lg uppercase">Feria del Vinilo</h3>
+            <p class="text-xs font-bold text-neutral-700">Más de 40 stands con ediciones limitadas, portadas clásicas y tornamesas.</p>
+          </div>
+
+          <!-- Panel 2 -->
+          <div class="bg-[#FFE600] border-4 border-black p-3 shadow-[8px_8px_0px_0px_#000] flex flex-col gap-3">
+            <div class="relative border-2 border-black h-48 overflow-hidden bg-[#0047FF]">
+              <img src="https://images.unsplash.com/photo-1789496820224-37b9f405fbe7?auto=format&fit=crop&w=700&q=80" alt="Escenario Pop" class="w-full h-full object-cover" />
+              <span class="absolute top-2 left-2 bg-[#FF0055] text-white border-2 border-black px-2 py-0.5 font-black text-xs uppercase">ZONA B</span>
+            </div>
+            <h3 class="font-black text-lg uppercase">Murales en Vivo</h3>
+            <p class="text-xs font-bold text-black">12 ilustradores Pop Art pintando lienzos gigantes frente al público.</p>
+          </div>
+
+          <!-- Panel 3 -->
+          <div class="bg-[#00E5FF] border-4 border-black p-3 shadow-[8px_8px_0px_0px_#000] flex flex-col gap-3">
+            <div class="relative border-2 border-black h-48 overflow-hidden bg-white flex items-center justify-center">
+              <!-- Ilustración Pop Art de Cómic -->
+              <svg class="w-32 h-32" viewBox="0 0 120 120" fill="none">
+                <polygon points="60,5 74,36 108,22 90,52 116,70 84,82 96,112 64,96 48,116 38,88 8,98 24,68 4,50 36,38 24,10 52,26" fill="#FF0055" stroke="#000" stroke-width="5"/>
+                <text x="60" y="66" text-anchor="middle" fill="#FFE600" font-weight="900" font-size="20" font-family="sans-serif">POW!</text>
+              </svg>
+              <span class="absolute top-2 left-2 bg-white border-2 border-black px-2 py-0.5 font-black text-xs uppercase">ZONA C</span>
+            </div>
+            <h3 class="font-black text-lg uppercase">Museo Cómic</h3>
+            <p class="text-xs font-bold text-black">Cabinas de fotos estilo historieta y exhibición de serigrafía.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: ENTRADAS (100vh) -->
+    <section id="entradas" class="relative h-screen w-full snap-start overflow-hidden bg-white pt-20 pb-16 px-6 md:px-12 flex flex-col items-center justify-center border-t-4 border-black">
+      
+      <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-15" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="halftone-white" width="20" height="20" patternUnits="userSpaceOnUse">
+            <circle cx="6" cy="6" r="3" fill="#0047FF" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#halftone-white)" />
+      </svg>
+
+      <div class="max-w-6xl w-full relative z-10 flex flex-col gap-5">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div class="bg-[#0047FF] text-white border-4 border-black px-4 py-2 shadow-[5px_5px_0px_0px_#000]">
+            <h2 class="text-2xl sm:text-4xl font-black uppercase tracking-tight">04 · Entradas</h2>
+          </div>
+          <span class="px-4 py-1.5 bg-[#FF0055] text-white border-4 border-black font-black text-xs uppercase shadow-[4px_4px_0px_0px_#000] rotate-2">
+            Preventa Activa
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 items-stretch">
+          <!-- Ticket 1 -->
+          <div class="bg-[#00E5FF] border-4 border-black p-5 shadow-[6px_6px_0px_0px_#000] flex flex-col justify-between gap-4">
+            <div>
+              <span class="px-2.5 py-0.5 bg-white border-2 border-black font-black text-xs uppercase">Pase Día</span>
+              <div class="mt-3 text-4xl font-black">$35</div>
+              <ul class="mt-4 flex flex-col gap-2 text-xs font-bold">
+                <li>★ Acceso general 1 día</li>
+                <li>★ Todos los escenarios</li>
+                <li>★ Feria del vinilo y murales</li>
+              </ul>
+            </div>
+            <a href="#contacto" class="w-full py-2.5 bg-white border-2 border-black font-black text-xs uppercase text-center shadow-[4px_4px_0px_0px_#000] hover:bg-[#FFE600] transition-colors">
+              Comprar Día
+            </a>
+          </div>
+
+          <!-- Ticket 2 -->
+          <div class="bg-[#FFE600] border-4 border-black p-5 shadow-[8px_8px_0px_0px_#000] flex flex-col justify-between gap-4 md:-translate-y-2 relative">
+            <span class="absolute -top-4 -right-3 px-3 py-1 bg-[#FF0055] text-white border-2 border-black font-black text-xs uppercase rotate-6 shadow-[3px_3px_0px_0px_#000]">
+              TOP!
+            </span>
+            <div>
+              <span class="px-2.5 py-0.5 bg-black text-white font-black text-xs uppercase">Full VIP 3 Días</span>
+              <div class="mt-3 text-4xl font-black">$85</div>
+              <ul class="mt-4 flex flex-col gap-2 text-xs font-bold">
+                <li>★ Acceso los 3 días sin filas</li>
+                <li>★ Póster serigrafiado oficial</li>
+                <li>★ Zona lounge y barra libre</li>
+              </ul>
+            </div>
+            <a href="#contacto" class="w-full py-2.5 bg-[#FF0055] text-white border-2 border-black font-black text-xs uppercase text-center shadow-[4px_4px_0px_0px_#000] hover:bg-black transition-colors">
+              Comprar VIP
+            </a>
+          </div>
+
+          <!-- Ticket 3 -->
+          <div class="bg-[#FF0055] text-white border-4 border-black p-5 shadow-[6px_6px_0px_0px_#000] flex flex-col justify-between gap-4">
+            <div>
+              <span class="px-2.5 py-0.5 bg-[#FFE600] text-black border-2 border-black font-black text-xs uppercase">Pack x4 Amigos</span>
+              <div class="mt-3 text-4xl font-black">$120</div>
+              <ul class="mt-4 flex flex-col gap-2 text-xs font-bold">
+                <li>★ 4 pases generales de 1 día</li>
+                <li>★ Totebag Pop Art de regalo</li>
+                <li>★ Descuento en merch oficial</li>
+              </ul>
+            </div>
+            <a href="#contacto" class="w-full py-2.5 bg-white text-black border-2 border-black font-black text-xs uppercase text-center shadow-[4px_4px_0px_0px_#000] hover:bg-[#00E5FF] transition-colors">
+              Comprar Pack
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: MAPA Y ESCENARIOS (100vh) -->
+    <section id="horarios" class="relative h-screen w-full snap-start overflow-hidden bg-[#0047FF] pt-20 pb-16 px-6 md:px-12 flex items-center justify-center border-t-4 border-black">
+      
+      <div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-12 gap-6 items-center relative z-10">
+        
+        <!-- Mapa Cómic -->
+        <div class="lg:col-span-6 bg-white border-4 border-black p-4 shadow-[8px_8px_0px_0px_#000]">
+          <div class="border-4 border-black bg-[#FFE600] h-64 sm:h-72 relative overflow-hidden">
+            <svg class="w-full h-full" viewBox="0 0 320 220" fill="none">
+              <rect width="320" height="220" fill="#FFE600"/>
+              <!-- Caminos -->
+              <path d="M0 110 H320 M160 0 V220" stroke="#000" stroke-width="8"/>
+              <path d="M0 110 H320 M160 0 V220" stroke="#FFF" stroke-width="3"/>
+              <!-- Zonas -->
+              <rect x="25" y="25" width="105" height="60" fill="#FF0055" stroke="#000" stroke-width="4"/>
+              <text x="77" y="60" text-anchor="middle" fill="#FFF" font-weight="900" font-size="12" font-family="sans-serif">ESCENARIO POP</text>
+              
+              <rect x="190" y="25" width="105" height="60" fill="#00E5FF" stroke="#000" stroke-width="4"/>
+              <text x="242" y="60" text-anchor="middle" fill="#000" font-weight="900" font-size="12" font-family="sans-serif">DOMO VINILO</text>
+              
+              <rect x="25" y="135" width="105" height="60" fill="#FFF" stroke="#000" stroke-width="4"/>
+              <text x="77" y="170" text-anchor="middle" fill="#000" font-weight="900" font-size="12" font-family="sans-serif">FOOD TRUCKS</text>
+              
+              <circle cx="242" cy="165" r="32" fill="#0047FF" stroke="#000" stroke-width="4"/>
+              <text x="242" y="169" text-anchor="middle" fill="#FFE600" font-weight="900" font-size="12" font-family="sans-serif">ARTE</text>
+            </svg>
+          </div>
+          <div class="mt-3 flex items-center justify-between font-black text-xs uppercase">
+            <span>Parque Central · Acceso Norte</span>
+            <span class="px-2 py-0.5 bg-[#00E5FF] border-2 border-black">Metro Línea 2</span>
+          </div>
+        </div>
+
+        <!-- Info Escenarios -->
+        <div class="lg:col-span-6 flex flex-col gap-4">
+          <div class="bg-[#FFE600] border-4 border-black px-4 py-2 shadow-[5px_5px_0px_0px_#000] self-start">
+            <h2 class="text-2xl sm:text-4xl font-black uppercase">05 · El Recinto</h2>
+          </div>
+
+          <div class="bg-white border-4 border-black p-4 shadow-[5px_5px_0px_0px_#000]">
+            <h3 class="font-black text-base uppercase text-[#FF0055]">Puertas Abiertas desde las 14:00</h3>
+            <p class="text-xs font-bold text-neutral-700 mt-1">Zona gastronómica, hidratación gratuita, casilleros y acceso adaptado en todo el parque.</p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div class="bg-[#00E5FF] border-4 border-black p-4 shadow-[4px_4px_0px_0px_#000]">
+              <span class="font-black text-2xl block">12</span>
+              <span class="font-black text-xs uppercase">Murales Gigantes</span>
+            </div>
+            <div class="bg-[#FF0055] text-white border-4 border-black p-4 shadow-[4px_4px_0px_0px_#000]">
+              <span class="font-black text-2xl block">18</span>
+              <span class="font-black text-xs uppercase">Food Trucks</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN 6: CLUB / REGISTRO (100vh) -->
+    <section id="contacto" class="relative h-screen w-full snap-start overflow-hidden bg-[#FFE600] pt-20 pb-16 px-6 md:px-12 flex items-center justify-center border-t-4 border-black">
+      
+      <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-15" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="halftone-end" width="18" height="18" patternUnits="userSpaceOnUse">
+            <circle cx="5" cy="5" r="3" fill="#000" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#halftone-end)" />
+      </svg>
+
+      <div class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative z-10">
+        
+        <!-- Formulario Pop Art -->
+        <div class="bg-white border-4 border-black p-6 md:p-8 shadow-[8px_8px_0px_0px_#000] flex flex-col gap-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-3xl font-black uppercase">06 · Únete al Club</h2>
+            <span class="px-2.5 py-1 bg-[#00E5FF] border-2 border-black font-black text-xs uppercase -rotate-3">VIP</span>
+          </div>
+          <p class="text-xs font-bold text-neutral-700">Recibe preventas secretas, horarios oficiales y un 15% de descuento en merchandising.</p>
+
+          <input type="text" placeholder="Tu Nombre" class="w-full px-4 py-2.5 bg-[#FFFDF5] border-2 border-black font-bold text-sm focus:outline-none focus:bg-[#00E5FF]" />
+          <input type="email" placeholder="tu@correo.com" class="w-full px-4 py-2.5 bg-[#FFFDF5] border-2 border-black font-bold text-sm focus:outline-none focus:bg-[#00E5FF]" />
+          
+          <button type="button" class="w-full py-3.5 bg-[#FF0055] text-white border-4 border-black font-black text-sm uppercase tracking-wider shadow-[5px_5px_0px_0px_#000] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
+            ¡Quiero mi Descuento!
+          </button>
+        </div>
+
+        <!-- Panel Visual Cómic -->
+        <div class="bg-[#0047FF] text-white border-4 border-black p-6 md:p-8 shadow-[8px_8px_0px_0px_#000] flex flex-col items-center text-center gap-4">
+          <svg class="w-36 h-36" viewBox="0 0 120 120" fill="none">
+            <polygon points="60,4 75,35 110,20 92,52 118,72 84,84 96,114 64,96 46,118 36,88 6,98 24,66 4,48 36,36 24,8 52,26" fill="#FFE600" stroke="#000" stroke-width="5"/>
+            <text x="60" y="65" text-anchor="middle" fill="#FF0055" font-weight="900" font-size="18" font-family="sans-serif">BAM!</text>
+          </svg>
+          <h3 class="text-2xl font-black uppercase">¡Nos vemos en el Parque Central!</h3>
+          <p class="text-xs font-bold text-[#00E5FF] uppercase tracking-wider">14, 15 y 16 de Noviembre · 2026</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER FIJO -->
+  <footer class="fixed bottom-0 left-0 right-0 z-50 bg-black text-white border-t-4 border-black px-4 md:px-10 h-12 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <span class="px-1.5 py-0.5 bg-[#FF0055] font-black text-[10px] uppercase">BOOM!</span>
+      <span class="font-black text-xs uppercase tracking-wider">FESTIVAL POP ART 2026</span>
+    </div>
+
+    <div class="hidden sm:flex items-center gap-4 text-xs font-black uppercase">
+      <span class="text-[#FFE600]">★ Parque Central</span>
+      <span class="text-[#00E5FF]">★ @boomfest26</span>
+    </div>
+
+    <a href="#inicio" class="px-2.5 py-0.5 bg-[#FFE600] text-black border border-white font-black text-[11px] uppercase hover:bg-[#00E5FF] transition-colors">
+      ↑ Arriba
+    </a>
+  </footer>
+
+</body>
+</html>

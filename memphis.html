@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth snap-y snap-mandatory">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VITA+ | Centro Médico Memphis</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#FFFDF5] text-black antialiased selection:bg-[#FF4D6D] selection:text-white">
+
+  <!-- HEADER FIJO -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#FFFDF5] border-b-4 border-black px-4 md:px-10 h-16 flex items-center justify-between">
+    <a href="#inicio" class="flex items-center gap-2.5 group">
+      <div class="w-10 h-10 bg-[#FF4D6D] border-2 border-black rounded-full flex items-center justify-center shadow-[3px_3px_0px_0px_#000] group-hover:translate-x-0.5 group-hover:translate-y-0.5 group-hover:shadow-none transition-all">
+        <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6V3z" stroke="#000" stroke-width="2" />
+        </svg>
+      </div>
+      <span class="font-black text-xl tracking-tight uppercase">VITA<span class="text-[#FF4D6D]">+</span></span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-2">
+      <a href="#inicio" class="px-2.5 py-1 bg-[#FFD600] border-2 border-black font-bold text-[11px] uppercase tracking-wider shadow-[2px_2px_0px_0px_#000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all">
+        01 Inicio
+      </a>
+      <a href="#especialidades" class="px-2.5 py-1 bg-[#72EFDD] border-2 border-black font-bold text-[11px] uppercase tracking-wider shadow-[2px_2px_0px_0px_#000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all">
+        02 Áreas
+      </a>
+      <a href="#equipo" class="px-2.5 py-1 bg-[#C8B6FF] border-2 border-black font-bold text-[11px] uppercase tracking-wider shadow-[2px_2px_0px_0px_#000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all">
+        03 Equipo
+      </a>
+      <a href="#planes" class="px-2.5 py-1 bg-white border-2 border-black font-bold text-[11px] uppercase tracking-wider shadow-[2px_2px_0px_0px_#000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all">
+        04 Planes
+      </a>
+      <a href="#tecnologia" class="px-2.5 py-1 bg-[#80ED99] border-2 border-black font-bold text-[11px] uppercase tracking-wider shadow-[2px_2px_0px_0px_#000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all">
+        05 Clínica
+      </a>
+      <a href="#cita" class="px-2.5 py-1 bg-[#FF4D6D] text-white border-2 border-black font-bold text-[11px] uppercase tracking-wider shadow-[2px_2px_0px_0px_#000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all">
+        06 Cita
+      </a>
+    </nav>
+
+    <a href="#cita" class="flex items-center gap-2 px-4 py-1.5 bg-[#FF4D6D] text-white border-2 border-black font-black text-xs uppercase tracking-wider shadow-[3px_3px_0px_0px_#000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all">
+      <span class="w-2.5 h-2.5 bg-[#FFD600] border border-black rounded-full"></span>
+      Urgencias 24H
+    </a>
+  </header>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <main>
+
+    <!-- SECCIÓN 1: INICIO (100vh) -->
+    <section id="inicio" class="relative h-screen w-full snap-start overflow-hidden bg-[#FFFDF5] pt-20 pb-16 px-6 md:px-12 flex items-center justify-center">
+      
+      <!-- Elementos Memphis de fondo -->
+      <svg class="absolute top-20 left-6 w-20 h-20 pointer-events-none hidden md:block" viewBox="0 0 100 100" fill="none">
+        <circle cx="15" cy="15" r="4" fill="#000"/>
+        <circle cx="35" cy="15" r="4" fill="#000"/>
+        <circle cx="55" cy="15" r="4" fill="#000"/>
+        <circle cx="15" cy="35" r="4" fill="#000"/>
+        <circle cx="35" cy="35" r="4" fill="#000"/>
+        <circle cx="55" cy="35" r="4" fill="#000"/>
+        <circle cx="15" cy="55" r="4" fill="#000"/>
+        <circle cx="35" cy="55" r="4" fill="#000"/>
+        <circle cx="55" cy="55" r="4" fill="#000"/>
+      </svg>
+
+      <svg class="absolute bottom-16 left-12 w-28 h-10 pointer-events-none hidden sm:block" viewBox="0 0 120 40" fill="none">
+        <path d="M5 30 L20 10 L35 30 L50 10 L65 30 L80 10 L95 30 L110 10" stroke="#FF4D6D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+
+      <svg class="absolute top-24 right-10 w-16 h-16 pointer-events-none hidden md:block" viewBox="0 0 80 80" fill="none">
+        <polygon points="40,8 72,68 8,68" fill="#FFD600" stroke="#000" stroke-width="4"/>
+      </svg>
+
+      <div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+        
+        <!-- Columna Izquierda: Contenido y Badges -->
+        <div class="lg:col-span-6 flex flex-col items-start gap-4 md:gap-5">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-[#72EFDD] border-2 border-black shadow-[4px_4px_0px_0px_#000] -rotate-2">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/>
+            </svg>
+            <span class="font-black text-xs uppercase tracking-widest">Centro Médico Integral</span>
+          </div>
+
+          <h1 class="text-5xl sm:text-6xl xl:text-7xl font-black leading-[0.95] tracking-tight uppercase">
+            SALUD
+            <span class="inline-block bg-[#FFD600] border-4 border-black px-3 py-1 shadow-[6px_6px_0px_0px_#000] rotate-1 mt-1">
+              SIN PAUSA
+            </span>
+          </h1>
+
+          <p class="text-sm sm:text-base font-bold text-neutral-800 max-w-md bg-white border-2 border-black px-4 py-3 shadow-[4px_4px_0px_0px_#000]">
+            Atención médica inmediata, diagnóstico digital y más de 20 especialistas certificados en un solo lugar.
+          </p>
+
+          <!-- Indicadores Visuales -->
+          <div class="flex flex-wrap gap-3">
+            <div class="flex items-center gap-2 bg-white border-2 border-black px-4 py-2 shadow-[4px_4px_0px_0px_#000]">
+              <span class="w-3 h-3 bg-[#38B000] border border-black rounded-full"></span>
+              <span class="font-black text-base">24/7</span>
+            </div>
+            <div class="flex items-center gap-2 bg-[#C8B6FF] border-2 border-black px-4 py-2 shadow-[4px_4px_0px_0px_#000]">
+              <span class="font-black text-base">+15</span>
+              <span class="font-bold text-xs uppercase">Áreas</span>
+            </div>
+            <div class="flex items-center gap-2 bg-[#FF4D6D] text-white border-2 border-black px-4 py-2 shadow-[4px_4px_0px_0px_#000]">
+              <span class="font-black text-base">15 min</span>
+              <span class="font-bold text-xs uppercase">Espera máx.</span>
+            </div>
+          </div>
+
+          <a href="#especialidades" class="mt-1 inline-flex items-center gap-3 px-7 py-3 bg-black text-white font-black text-sm uppercase tracking-wider border-2 border-black shadow-[6px_6px_0px_0px_#FFD600] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
+            Explorar Áreas
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Columna Derecha: Imagen Real con Marco Memphis -->
+        <div class="lg:col-span-6 flex justify-center">
+          <div class="relative w-full max-w-md bg-[#72EFDD] border-4 border-black shadow-[10px_10px_0px_0px_#000] p-4">
+            
+            <!-- Esquina decorativa cruz médica -->
+            <div class="absolute -top-5 -left-5 z-20 w-14 h-14 bg-[#FFD600] border-4 border-black rounded-full flex items-center justify-center shadow-[4px_4px_0px_0px_#000]">
+              <svg class="w-7 h-7 text-[#FF4D6D]" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6V3z" stroke="#000" stroke-width="1.5"/>
+              </svg>
+            </div>
+
+            <!-- Imagen Real -->
+            <div class="relative border-4 border-black overflow-hidden bg-white aspect-[4/3]">
+              <img 
+                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80" 
+                alt="Consulta médica en VITA+ Centro Médico" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <!-- Pie de foto Memphis -->
+            <div class="mt-3 flex items-center justify-between bg-white border-2 border-black px-3 py-2">
+              <span class="font-black text-xs uppercase tracking-wide">Diagnóstico Digital</span>
+              <span class="px-2 py-0.5 bg-[#80ED99] border border-black font-black text-[11px] uppercase">En vivo</span>
+            </div>
+
+            <!-- Tarjeta flotante pulso -->
+            <div class="absolute -bottom-5 -right-4 z-20 bg-white border-4 border-black px-4 py-2 shadow-[5px_5px_0px_0px_#000] rotate-3 flex items-center gap-3">
+              <svg class="w-9 h-5 text-[#FF4D6D]" viewBox="0 0 60 30" fill="none">
+                <path d="M2 15 H14 L20 4 L28 26 L35 10 L40 15 H58" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="font-black text-sm">72 BPM</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: ESPECIALIDADES (100vh) -->
+    <section id="especialidades" class="relative h-screen w-full snap-start overflow-hidden bg-[#72EFDD] pt-20 pb-16 px-6 md:px-12 flex flex-col items-center justify-center border-t-4 border-black">
+      
+      <!-- Decoración Memphis -->
+      <svg class="absolute top-20 right-12 w-20 h-20 pointer-events-none hidden md:block" viewBox="0 0 100 100" fill="none">
+        <circle cx="50" cy="50" r="35" fill="#FFD600" stroke="#000" stroke-width="4"/>
+        <circle cx="50" cy="50" r="15" fill="#72EFDD" stroke="#000" stroke-width="4"/>
+      </svg>
+
+      <svg class="absolute bottom-16 left-8 w-16 h-16 pointer-events-none hidden md:block" viewBox="0 0 80 80" fill="none">
+        <rect x="15" y="15" width="50" height="50" fill="#FF4D6D" stroke="#000" stroke-width="4" transform="rotate(15 40 40)"/>
+      </svg>
+
+      <div class="max-w-6xl w-full relative z-10 flex flex-col gap-4 md:gap-5">
+        
+        <!-- Encabezado + Tarjeta de Equipo Real -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="px-3 py-1 bg-black text-[#FFD600] font-black text-sm uppercase">02</span>
+              <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight">Áreas Médicas</h2>
+            </div>
+            <p class="font-bold text-xs sm:text-sm mt-1">Tecnología clínica y atención personalizada en cada consulta.</p>
+          </div>
+
+          <div class="hidden sm:flex items-center gap-3 bg-white border-2 border-black px-3 py-1.5 shadow-[4px_4px_0px_0px_#000]">
+            <img 
+              src="https://images.unsplash.com/photo-1673865641073-4479f93a7776?auto=format&fit=crop&w=200&q=80" 
+              alt="Dra. Laura Méndez" 
+              class="w-9 h-9 rounded-full object-cover border-2 border-black"
+            />
+            <div class="leading-tight">
+              <p class="font-black text-xs uppercase">Dra. Laura Méndez</p>
+              <p class="font-bold text-[11px] text-neutral-600">Dirección Médica · +20 Especialistas</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid de 6 Especialidades con texto breve -->
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
+          
+          <!-- Card 1: Cardiología -->
+          <div class="bg-[#FF4D6D] text-white border-4 border-black p-4 md:p-5 shadow-[6px_6px_0px_0px_#000] hover:-translate-y-1 transition-transform flex flex-col items-center text-center gap-2">
+            <div class="w-12 h-12 bg-white border-2 border-black rounded-full flex items-center justify-center">
+              <svg class="w-7 h-7 text-[#FF4D6D]" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="#000" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="font-black text-sm md:text-base uppercase tracking-wide">Cardiología</h3>
+            <p class="text-xs font-bold leading-snug hidden sm:block">Electrocardiogramas, ecocardio y chequeo preventivo.</p>
+          </div>
+
+          <!-- Card 2: Pediatría -->
+          <div class="bg-[#FFD600] text-black border-4 border-black p-4 md:p-5 shadow-[6px_6px_0px_0px_#000] hover:-translate-y-1 transition-transform flex flex-col items-center text-center gap-2">
+            <div class="w-12 h-12 bg-white border-2 border-black rounded-2xl flex items-center justify-center rotate-3">
+              <svg class="w-7 h-7 text-[#3A86FF]" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="#000" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="font-black text-sm md:text-base uppercase tracking-wide">Pediatría</h3>
+            <p class="text-xs font-bold leading-snug hidden sm:block">Control de crecimiento, vacunas y cuidado infantil.</p>
+          </div>
+
+          <!-- Card 3: Odontología -->
+          <div class="bg-[#FFFDF5] text-black border-4 border-black p-4 md:p-5 shadow-[6px_6px_0px_0px_#000] hover:-translate-y-1 transition-transform flex flex-col items-center text-center gap-2">
+            <div class="w-12 h-12 bg-[#72EFDD] border-2 border-black rounded-full flex items-center justify-center">
+              <svg class="w-7 h-7 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M7 4c-2.5 0-4 2-4 5 0 3 1.5 5 2 8 .5 2.5 1.5 4 2.5 4s1.5-2 2.5-4c.5-1 1.5-1 2 0 1 2 1.5 4 2.5 4s2-1.5 2.5-4c.5-3 2-5 2-8 0-3-1.5-5-4-5-1.5 0-2.5.8-3 1.5C11.5 4.8 10.5 4 7 4z" fill="#FFF"/>
+              </svg>
+            </div>
+            <h3 class="font-black text-sm md:text-base uppercase tracking-wide">Odontología</h3>
+            <p class="text-xs font-bold leading-snug hidden sm:block">Limpieza dental, ortodoncia y estética sin dolor.</p>
+          </div>
+
+          <!-- Card 4: Laboratorio -->
+          <div class="bg-[#C8B6FF] text-black border-4 border-black p-4 md:p-5 shadow-[6px_6px_0px_0px_#000] hover:-translate-y-1 transition-transform flex flex-col items-center text-center gap-2">
+            <div class="w-12 h-12 bg-[#FFD600] border-2 border-black flex items-center justify-center -rotate-3">
+              <svg class="w-7 h-7 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                <path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3l-5-9V3"/>
+              </svg>
+            </div>
+            <h3 class="font-black text-sm md:text-base uppercase tracking-wide">Laboratorio</h3>
+            <p class="text-xs font-bold leading-snug hidden sm:block">Análisis clínicos con resultados digitales el mismo día.</p>
+          </div>
+
+          <!-- Card 5: Urgencias -->
+          <div class="bg-[#3A86FF] text-white border-4 border-black p-4 md:p-5 shadow-[6px_6px_0px_0px_#000] hover:-translate-y-1 transition-transform flex flex-col items-center text-center gap-2">
+            <div class="w-12 h-12 bg-white border-2 border-black rounded-full flex items-center justify-center">
+              <svg class="w-7 h-7 text-[#FF4D6D]" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6V3z" stroke="#000" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="font-black text-sm md:text-base uppercase tracking-wide">Urgencias</h3>
+            <p class="text-xs font-bold leading-snug hidden sm:block">Atención rápida las 24 horas todos los días del año.</p>
+          </div>
+
+          <!-- Card 6: Oftalmología -->
+          <div class="bg-[#80ED99] text-black border-4 border-black p-4 md:p-5 shadow-[6px_6px_0px_0px_#000] hover:-translate-y-1 transition-transform flex flex-col items-center text-center gap-2">
+            <div class="w-12 h-12 bg-white border-2 border-black rounded-2xl flex items-center justify-center">
+              <svg class="w-7 h-7 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z" fill="#FFD600"/>
+                <circle cx="12" cy="12" r="3" fill="#000"/>
+              </svg>
+            </div>
+            <h3 class="font-black text-sm md:text-base uppercase tracking-wide">Oftalmología</h3>
+            <p class="text-xs font-bold leading-snug hidden sm:block">Examen visual completo y salud ocular avanzada.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: EQUIPO MÉDICO (100vh) -->
+    <section id="equipo" class="relative h-screen w-full snap-start overflow-hidden bg-[#C8B6FF] pt-20 pb-16 px-6 md:px-12 flex flex-col items-center justify-center border-t-4 border-black">
+      
+      <!-- Decoración Memphis -->
+      <svg class="absolute top-20 left-8 w-20 h-10 pointer-events-none hidden md:block" viewBox="0 0 120 40" fill="none">
+        <path d="M5 30 L20 10 L35 30 L50 10 L65 30 L80 10 L95 30 L110 10" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <svg class="absolute bottom-16 right-10 w-16 h-16 pointer-events-none hidden md:block" viewBox="0 0 80 80" fill="none">
+        <polygon points="40,8 72,68 8,68" fill="#FFD600" stroke="#000" stroke-width="4"/>
+      </svg>
+
+      <div class="max-w-6xl w-full relative z-10 flex flex-col gap-5">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="px-3 py-1 bg-black text-[#FFD600] font-black text-sm uppercase">03</span>
+              <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight">Equipo Médico</h2>
+            </div>
+            <p class="font-bold text-xs sm:text-sm mt-1">Especialistas certificados con trato cercano y tecnología de punta.</p>
+          </div>
+          <span class="hidden sm:inline-block px-4 py-1.5 bg-[#FFD600] border-2 border-black font-black text-xs uppercase shadow-[4px_4px_0px_0px_#000] rotate-2">
+            +20 Doctores
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <!-- Doctor 1 -->
+          <div class="bg-[#FFFDF5] border-4 border-black p-4 shadow-[6px_6px_0px_0px_#000] flex flex-col gap-3">
+            <div class="relative border-2 border-black overflow-hidden h-44 bg-[#72EFDD]">
+              <img src="https://images.unsplash.com/photo-1673865641073-4479f93a7776?auto=format&fit=crop&w=700&q=80" alt="Dra. Laura Méndez" class="w-full h-full object-cover" />
+              <span class="absolute bottom-2 left-2 px-2.5 py-0.5 bg-[#FFD600] border-2 border-black font-black text-[11px] uppercase">12 años exp.</span>
+            </div>
+            <div>
+              <h3 class="font-black text-lg uppercase">Dra. Laura Méndez</h3>
+              <p class="font-bold text-xs text-[#FF4D6D] uppercase">Cardiología Clínica</p>
+              <p class="text-xs font-medium text-neutral-700 mt-1">Especialista en diagnóstico cardiovascular no invasivo y prevención.</p>
+            </div>
+          </div>
+
+          <!-- Doctor 2 -->
+          <div class="bg-[#FFFDF5] border-4 border-black p-4 shadow-[6px_6px_0px_0px_#000] flex flex-col gap-3">
+            <div class="relative border-2 border-black overflow-hidden h-44 bg-[#FFD600]">
+              <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=700&q=80" alt="Dr. Carlos Rivas" class="w-full h-full object-cover" />
+              <span class="absolute bottom-2 left-2 px-2.5 py-0.5 bg-[#72EFDD] border-2 border-black font-black text-[11px] uppercase">15 años exp.</span>
+            </div>
+            <div>
+              <h3 class="font-black text-lg uppercase">Dr. Carlos Rivas</h3>
+              <p class="font-bold text-xs text-[#3A86FF] uppercase">Medicina Interna</p>
+              <p class="text-xs font-medium text-neutral-700 mt-1">Atención integral de adultos y control de enfermedades crónicas.</p>
+            </div>
+          </div>
+
+          <!-- Doctor 3 -->
+          <div class="bg-[#FFFDF5] border-4 border-black p-4 shadow-[6px_6px_0px_0px_#000] flex flex-col gap-3">
+            <div class="relative border-2 border-black overflow-hidden h-44 bg-[#FF4D6D]">
+              <img src="https://images.unsplash.com/photo-1666887360364-4919ae373fcb?auto=format&fit=crop&w=700&q=80" alt="Dra. Sofía Torres" class="w-full h-full object-cover" />
+              <span class="absolute bottom-2 left-2 px-2.5 py-0.5 bg-[#80ED99] border-2 border-black font-black text-[11px] uppercase">9 años exp.</span>
+            </div>
+            <div>
+              <h3 class="font-black text-lg uppercase">Dra. Sofía Torres</h3>
+              <p class="font-bold text-xs text-[#38B000] uppercase">Pediatría General</p>
+              <p class="text-xs font-medium text-neutral-700 mt-1">Seguimiento infantil, vacunación y urgencias pediátricas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: PLANES DE SALUD (100vh) -->
+    <section id="planes" class="relative h-screen w-full snap-start overflow-hidden bg-[#FFFDF5] pt-20 pb-16 px-6 md:px-12 flex flex-col items-center justify-center border-t-4 border-black">
+      
+      <!-- Decoración Memphis -->
+      <svg class="absolute top-20 right-10 w-20 h-20 pointer-events-none hidden md:block" viewBox="0 0 100 100" fill="none">
+        <circle cx="20" cy="20" r="5" fill="#FF4D6D"/>
+        <circle cx="50" cy="20" r="5" fill="#FF4D6D"/>
+        <circle cx="80" cy="20" r="5" fill="#FF4D6D"/>
+        <circle cx="20" cy="50" r="5" fill="#FF4D6D"/>
+        <circle cx="50" cy="50" r="5" fill="#FF4D6D"/>
+        <circle cx="80" cy="50" r="5" fill="#FF4D6D"/>
+      </svg>
+
+      <div class="max-w-6xl w-full relative z-10 flex flex-col gap-5">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="px-3 py-1 bg-[#FF4D6D] text-white border-2 border-black font-black text-sm uppercase">04</span>
+              <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight">Planes VITA+</h2>
+            </div>
+            <p class="font-bold text-xs sm:text-sm mt-1">Membresías mensuales sin letras pequeñas ni tiempos de espera.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 items-stretch">
+          <!-- Plan 1 -->
+          <div class="bg-[#72EFDD] border-4 border-black p-5 shadow-[6px_6px_0px_0px_#000] flex flex-col justify-between gap-4">
+            <div>
+              <span class="px-2.5 py-0.5 bg-white border-2 border-black font-black text-xs uppercase">Esencial</span>
+              <div class="mt-3 flex items-baseline gap-1">
+                <span class="text-4xl font-black">$29</span>
+                <span class="font-bold text-xs uppercase">/ mes</span>
+              </div>
+              <ul class="mt-4 flex flex-col gap-2 text-xs font-bold">
+                <li class="flex items-center gap-2"><span class="w-3 h-3 bg-black inline-block"></span> Consultas generales ilimitadas</li>
+                <li class="flex items-center gap-2"><span class="w-3 h-3 bg-black inline-block"></span> Telemedicina 24/7</li>
+                <li class="flex items-center gap-2"><span class="w-3 h-3 bg-black inline-block"></span> 20% dto. en laboratorio</li>
+              </ul>
+            </div>
+            <a href="#cita" class="w-full py-2.5 bg-white border-2 border-black font-black text-xs uppercase text-center shadow-[4px_4px_0px_0px_#000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all">
+              Elegir Esencial
+            </a>
+          </div>
+
+          <!-- Plan 2 (Destacado) -->
+          <div class="bg-[#FFD600] border-4 border-black p-5 shadow-[8px_8px_0px_0px_#000] flex flex-col justify-between gap-4 md:-translate-y-2">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-0.5 bg-[#FF4D6D] text-white border-2 border-black font-black text-xs uppercase">Familiar</span>
+                <span class="px-2 py-0.5 bg-black text-[#FFD600] font-black text-[10px] uppercase">Popular</span>
+              </div>
+              <div class="mt-3 flex items-baseline gap-1">
+                <span class="text-4xl font-black">$59</span>
+                <span class="font-bold text-xs uppercase">/ mes</span>
+              </div>
+              <ul class="mt-4 flex flex-col gap-2 text-xs font-bold">
+                <li class="flex items-center gap-2"><span class="w-3 h-3 bg-black inline-block"></span> Hasta 4 integrantes</li>
+                <li class="flex items-center gap-2"><span class="w-3 h-3 bg-black inline-block"></span> Pediatría y Odontología incluidas</li>
+                <li class="flex items-center gap-2"><span class="w-3 h-3 bg-black inline-block"></span> Urgencias 24H sin copago</li>
+              </ul>
+            </div>
+            <a href="#cita" class="w-full py-2.5 bg-black text-white border-2 border-black font-black text-xs uppercase text-center shadow-[4px_4px_0px_0px_#FF4D6D] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all">
+              Elegir Familiar
+            </a>
+          </div>
+
+          <!-- Plan 3 -->
+          <div class="bg-[#C8B6FF] border-4 border-black p-5 shadow-[6px_6px_0px_0px_#000] flex flex-col justify-between gap-4">
+            <div>
+              <span class="px-2.5 py-0.5 bg-white border-2 border-black font-black text-xs uppercase">Preventivo+</span>
+              <div class="mt-3 flex items-baseline gap-1">
+                <span class="text-4xl font-black">$45</span>
+                <span class="font-bold text-xs uppercase">/ mes</span>
+              </div>
+              <ul class="mt-4 flex flex-col gap-2 text-xs font-bold">
+                <li class="flex items-center gap-2"><span class="w-3 h-3 bg-black inline-block"></span> Chequeo anual completo</li>
+                <li class="flex items-center gap-2"><span class="w-3 h-3 bg-black inline-block"></span> Cardiología y Oftalmología</li>
+                <li class="flex items-center gap-2"><span class="w-3 h-3 bg-black inline-block"></span> Análisis clínicos incluidos</li>
+              </ul>
+            </div>
+            <a href="#cita" class="w-full py-2.5 bg-white border-2 border-black font-black text-xs uppercase text-center shadow-[4px_4px_0px_0px_#000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all">
+              Elegir Preventivo+
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: INSTALACIONES Y TECNOLOGÍA (100vh) -->
+    <section id="tecnologia" class="relative h-screen w-full snap-start overflow-hidden bg-[#80ED99] pt-20 pb-16 px-6 md:px-12 flex items-center justify-center border-t-4 border-black">
+      
+      <!-- Decoración Memphis -->
+      <svg class="absolute bottom-16 right-8 w-20 h-20 pointer-events-none hidden md:block" viewBox="0 0 80 80" fill="none">
+        <rect x="15" y="15" width="50" height="50" fill="#FFD600" stroke="#000" stroke-width="4" transform="rotate(12 40 40)"/>
+      </svg>
+
+      <div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-12 gap-6 items-center relative z-10">
+        
+        <!-- Foto grande de instalaciones -->
+        <div class="lg:col-span-6">
+          <div class="bg-[#FFFDF5] border-4 border-black p-4 shadow-[8px_8px_0px_0px_#000]">
+            <div class="relative border-2 border-black overflow-hidden aspect-[4/3]">
+              <img 
+                src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=900&q=80" 
+                alt="Tecnología médica moderna" 
+                class="w-full h-full object-cover"
+              />
+              <span class="absolute top-3 left-3 px-3 py-1 bg-[#FF4D6D] text-white border-2 border-black font-black text-xs uppercase shadow-[3px_3px_0px_0px_#000]">
+                Equipamiento 2026
+              </span>
+            </div>
+            <div class="mt-3 flex items-center justify-between">
+              <span class="font-black text-sm uppercase">Salas Digitales</span>
+              <span class="font-bold text-xs bg-[#FFD600] border-2 border-black px-2.5 py-0.5">Certificación ISO</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bloques de tecnología -->
+        <div class="lg:col-span-6 flex flex-col gap-4">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 bg-black text-[#80ED99] font-black text-sm uppercase">05</span>
+            <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight">Clínica Inteligente</h2>
+          </div>
+          <p class="font-bold text-xs sm:text-sm">Infraestructura diseñada para darte diagnósticos precisos en minutos.</p>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div class="bg-[#FFFDF5] border-4 border-black p-4 shadow-[4px_4px_0px_0px_#000]">
+              <span class="inline-block px-2 py-0.5 bg-[#FFD600] border border-black font-black text-[10px] uppercase mb-2">Imagen</span>
+              <h3 class="font-black text-sm uppercase">Resonancia 3T</h3>
+              <p class="text-xs font-medium text-neutral-700 mt-1">Alta definición en tiempo récord.</p>
+            </div>
+            <div class="bg-[#FFFDF5] border-4 border-black p-4 shadow-[4px_4px_0px_0px_#000]">
+              <span class="inline-block px-2 py-0.5 bg-[#72EFDD] border border-black font-black text-[10px] uppercase mb-2">App</span>
+              <h3 class="font-black text-sm uppercase">Historial Cloud</h3>
+              <p class="text-xs font-medium text-neutral-700 mt-1">Tus recetas y estudios en tu móvil.</p>
+            </div>
+            <div class="bg-[#FFFDF5] border-4 border-black p-4 shadow-[4px_4px_0px_0px_#000]">
+              <span class="inline-block px-2 py-0.5 bg-[#C8B6FF] border border-black font-black text-[10px] uppercase mb-2">Lab</span>
+              <h3 class="font-black text-sm uppercase">Resultados Express</h3>
+              <p class="text-xs font-medium text-neutral-700 mt-1">Entrega digital en menos de 3 horas.</p>
+            </div>
+            <div class="bg-[#FFFDF5] border-4 border-black p-4 shadow-[4px_4px_0px_0px_#000]">
+              <span class="inline-block px-2 py-0.5 bg-[#FF4D6D] text-white border border-black font-black text-[10px] uppercase mb-2">24H</span>
+              <h3 class="font-black text-sm uppercase">Farmacia Propia</h3>
+              <p class="text-xs font-medium text-neutral-700 mt-1">Surtido inmediato al salir de consulta.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN 6: CITA Y UBICACIÓN (100vh) -->
+    <section id="cita" class="relative h-screen w-full snap-start overflow-hidden bg-[#FFD600] pt-20 pb-16 px-6 md:px-12 flex items-center justify-center border-t-4 border-black">
+      
+      <!-- Patrón Memphis -->
+      <svg class="absolute top-20 left-8 w-20 h-20 pointer-events-none hidden md:block" viewBox="0 0 100 100" fill="none">
+        <path d="M10 20 L30 40 L10 60 M40 20 L60 40 L40 60" stroke="#000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+
+      <div class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center relative z-10">
+        
+        <!-- Panel Izquierdo: Reserva Rápida -->
+        <div class="bg-[#FFFDF5] border-4 border-black p-5 md:p-7 shadow-[8px_8px_0px_0px_#000] flex flex-col gap-4">
+          <div class="flex items-center justify-between">
+            <div>
+              <h2 class="text-3xl font-black uppercase">Tu Cita</h2>
+              <p class="text-xs font-bold text-neutral-700 mt-0.5">Elige un horario y confirmamos tu turno al instante.</p>
+            </div>
+            <span class="px-3 py-1 bg-[#FF4D6D] text-white border-2 border-black font-black text-xs uppercase -rotate-3">Hoy</span>
+          </div>
+
+          <!-- Horarios Visuales -->
+          <div class="grid grid-cols-3 gap-2">
+            <button type="button" class="py-2 bg-[#72EFDD] border-2 border-black font-black text-sm shadow-[3px_3px_0px_0px_#000] hover:bg-[#3A86FF] hover:text-white transition-colors">09:00</button>
+            <button type="button" class="py-2 bg-white border-2 border-black font-black text-sm shadow-[3px_3px_0px_0px_#000] hover:bg-[#3A86FF] hover:text-white transition-colors">11:30</button>
+            <button type="button" class="py-2 bg-[#C8B6FF] border-2 border-black font-black text-sm shadow-[3px_3px_0px_0px_#000] hover:bg-[#3A86FF] hover:text-white transition-colors">16:00</button>
+          </div>
+
+          <!-- Inputs -->
+          <div class="flex flex-col gap-2.5">
+            <input type="text" placeholder="Nombre completo" class="w-full px-4 py-2 bg-white border-2 border-black font-bold text-sm focus:outline-none focus:bg-[#72EFDD]" />
+            <input type="tel" placeholder="Teléfono / WhatsApp" class="w-full px-4 py-2 bg-white border-2 border-black font-bold text-sm focus:outline-none focus:bg-[#72EFDD]" />
+            <select class="w-full px-4 py-2 bg-white border-2 border-black font-bold text-sm focus:outline-none focus:bg-[#72EFDD]">
+              <option>Medicina General</option>
+              <option>Cardiología</option>
+              <option>Pediatría</option>
+              <option>Odontología</option>
+              <option>Laboratorio</option>
+              <option>Oftalmología</option>
+            </select>
+          </div>
+
+          <button type="button" class="w-full py-3 bg-[#FF4D6D] text-white border-2 border-black font-black text-sm uppercase tracking-wider shadow-[5px_5px_0px_0px_#000] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all flex items-center justify-center gap-2">
+            Reservar Ahora
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Panel Derecho: Imagen Real de Clínica + Datos -->
+        <div class="bg-[#C8B6FF] border-4 border-black p-5 shadow-[8px_8px_0px_0px_#000] flex flex-col gap-4">
+          <div class="relative border-4 border-black overflow-hidden bg-white h-48 md:h-52">
+            <img 
+              src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=900&q=80" 
+              alt="Instalaciones de VITA+ Centro Médico" 
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute top-3 left-3 bg-[#FFD600] border-2 border-black px-3 py-1 font-black text-xs uppercase shadow-[3px_3px_0px_0px_#000]">
+              Sede Central
+            </div>
+          </div>
+
+          <div class="bg-white border-2 border-black p-3 flex flex-col gap-1">
+            <h3 class="font-black text-sm uppercase">Visítanos sin cita previa en Urgencias</h3>
+            <p class="text-xs font-bold text-neutral-700">Estacionamiento gratuito y acceso directo para ambulancias.</p>
+          </div>
+
+          <!-- Badges de Ubicación y Teléfono -->
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-2 bg-white border-2 border-black px-3 py-1.5 shadow-[3px_3px_0px_0px_#000]">
+              <svg class="w-4 h-4 text-[#FF4D6D]" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+              </svg>
+              <span class="font-black text-xs uppercase">Av. Central 420</span>
+            </div>
+            <div class="flex items-center gap-2 bg-[#FFD600] border-2 border-black px-3 py-1.5 shadow-[3px_3px_0px_0px_#000]">
+              <svg class="w-4 h-4 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span class="font-black text-xs">800-8482</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER FIJO -->
+  <footer class="fixed bottom-0 left-0 right-0 z-50 bg-black text-white border-t-4 border-black px-4 md:px-10 h-12 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <span class="w-3 h-3 bg-[#FFD600] inline-block"></span>
+      <span class="font-black text-xs uppercase tracking-widest">VITA+ CENTRO MÉDICO</span>
+    </div>
+
+    <div class="hidden sm:flex items-center gap-4 text-xs font-bold uppercase">
+      <span class="text-[#72EFDD]">● Urgencias 24H</span>
+      <span class="text-[#FFD600]">● Av. Central 420</span>
+    </div>
+
+    <div class="flex items-center gap-2">
+      <a href="#inicio" class="px-2.5 py-0.5 bg-[#FF4D6D] text-white border border-white font-black text-[11px] uppercase hover:bg-[#FFD600] hover:text-black transition-colors">
+        ↑ Subir
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
