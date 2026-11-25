@@ -29,12 +29,14 @@ Migrar el diseño HTML/Tailwind asignado (**Memphis**, **Pop Art** o **Brutalism
 
 Si **no estás en tu PC personal**, asegúrate de limpiar credenciales anteriores y configurar tu identidad en Git antes de hacer commits o subir cambios:
 
-1. **Limpiar credenciales guardadas (Windows):**
-   - Abre el **Administrador de credenciales** de Windows (*Panel de control > Cuentas de usuario > Administrador de credenciales > Credenciales de Windows*) y elimina cualquier credencial previa relacionada con `git:` o `github.com`.
-   - También puedes borrar la caché de credenciales desde la terminal:
+1. **Limpiar credenciales guardadas (Windows, Git Bash y VS Code):**
+   - **Administrador de credenciales de Windows:** Abre el *Panel de control > Cuentas de usuario > Administrador de credenciales > Credenciales de Windows* y elimina cualquier credencial previa relacionada con `git:` o `github.com`.
+   - **Desde Git Bash / terminal:** Puedes limpiar la caché o desactivar el asistente de credenciales para evitar que use una cuenta anterior:
      ```bash
      git credential-manager delete https://github.com
+     git config --global credential.helper ""
      ```
+   - **En Visual Studio Code (VSC):** Si hay una sesión iniciada de otra persona, haz clic en el ícono de **Cuentas (perfil)** en la barra lateral inferior izquierda y selecciona **Cerrar sesión** (*Sign Out*) en GitHub antes de autenticar tu propia cuenta.
 2. **Configurar tu nombre y correo de Git:**
    ```bash
    git config --global user.name "Tu Nombre Completo"
