@@ -122,13 +122,11 @@ Busca tu **número de documento** para conocer el diseño que te corresponde mig
 
 > *(En tu proyecto base de React, completa estos datos de forma **muy detallada** en la rama `master`, haz commit y súbela a GitHub antes de crear `develop`)*
 
-- **Nombre completo:** 
-- **Documento de identidad:** 
-- **Ficha / Grupo:** 
-- **Programa de formación:** 
-- **Correo SENA / Institucional:** 
+- **Nombre completo:**
+- **Documento de identidad:**
+- **Ficha:** 
+- **Programa de formación:**  
 - **Correo personal:** 
-- **Teléfono / WhatsApp:** 
 - **Usuario / Enlace de GitHub:** 
-- **Diseño asignado:** *(Memphis / Pop Art / Brutalismo)*
-- **Sobre mí / Perfil:** *(Breve descripción personal, intereses en desarrollo web y expectativas del taller)*
+- **Diseño asignado:**
+- **Sobre mí / Perfil:**
